@@ -25,7 +25,8 @@ public class TankController : MonoBehaviour
         remeber that time.deltatime makes the game run by the seconds in the game instead of the amount of frames you have while running the game
         Vector 3 forward is just (0,0,1) but itsa just "easier" to read for later
         */
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput); // this will affect how fast your character will be able to turn 
+        
+        // this will affect how fast your character will be able to turn 
         transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
     }
 }
